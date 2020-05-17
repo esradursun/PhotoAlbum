@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E665C8BF-FDD7-4143-AECC-872A742B6AA9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8BE9561-396B-4622-AF83-51C4A3940E30"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PinchPhotoAlbum/Services/AlbumsService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "getAlbumList(url:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C8BE9561-396B-4622-AF83-51C4A3940E30 - 733608d625cf3cdc"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PinchPhotoAlbum.AlbumsService.getAlbumList(url: Foundation.URL, completion: (Swift.Optional&lt;Swift.Array&lt;PinchPhotoAlbum.AlbumsModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PinchPhotoAlbum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esradursun/Desktop/Pinch%20Assignment/PinchPhotoAlbum/PinchPhotoAlbum/Services/AlbumsService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "121">
+               </Location>
+               <Location
+                  uuid = "C8BE9561-396B-4622-AF83-51C4A3940E30 - 80fac5d71dbbde7d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PinchPhotoAlbum.AlbumsService.getAlbumList(url: Foundation.URL, completion: (Swift.Optional&lt;Swift.Array&lt;PinchPhotoAlbum.AlbumsModel&gt;&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PinchPhotoAlbum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/esradursun/Desktop/Pinch%20Assignment/PinchPhotoAlbum/PinchPhotoAlbum/Services/AlbumsService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "616F502C-C2F9-4180-8BCB-23BEF81D92AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PinchPhotoAlbum/Services/AlbumsService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getAlbumList(url:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "A8A2E50C-59BB-415F-9421-8AAA72EE2629"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "F8A1AE93-2B73-4F31-B03F-40A84FF23562"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "UIViewAlertForUnsatisfiableConstraints"
+            moduleName = "">
+            <Locations>
+               <Location
+                  uuid = "F8A1AE93-2B73-4F31-B03F-40A84FF23562 - ba3ad5676a792f38"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UIViewAlertForUnsatisfiableConstraints"
+                  moduleName = "UIKitCore"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

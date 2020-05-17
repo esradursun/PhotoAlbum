@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gtg-Ud-Imu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo List View Controller-->
+        <scene sceneID="Ssl-Yf-yfC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQN-cL-zOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tableViewController id="OiH-9O-ktI" customClass="PhotoListViewController" customModule="PinchPhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oxq-Qf-tjC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="OiH-9O-ktI" id="oxK-PS-g6W"/>
+                            <outlet property="delegate" destination="OiH-9O-ktI" id="gvX-3I-5Iu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="kht-ms-g96"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="3766.666666666667" y="134.59821428571428"/>
+        </scene>
+        <!--Photo Detail Controller-->
+        <scene sceneID="gfF-Pt-SqF">
+            <objects>
+                <viewController storyboardIdentifier="PhotoDetailViewController" id="Sj4-td-inn" userLabel="Photo Detail Controller" customClass="PhotoDetailViewController" customModule="PinchPhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAH-ho-NM9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="en6-kO-pux">
+                                <rect key="frame" x="0.0" y="82" width="414" height="671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-ig-iXz" userLabel="photoDetailImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="gT2-qJ-GmL"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="I5b-7T-mx5"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gp-Aq-k8i" userLabel="photoDetailTitleLabel">
+                                <rect key="frame" x="0.0" y="761" width="414" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88155009390000005" green="0.88155009390000005" blue="0.88155009390000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-Ns-9al" userLabel="closeButton">
+                                <rect key="frame" x="311" y="44" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedCloseButton:" destination="Sj4-td-inn" eventType="touchUpInside" id="GKl-ZO-WYn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RPq-oD-ucK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M6G-AR-Anl"/>
+                    <connections>
+                        <outlet property="closeButton" destination="7jf-Ns-9al" id="MgZ-wd-tzr"/>
+                        <outlet property="photoDetailImageView" destination="Zfa-ig-iXz" id="aac-9G-EZJ"/>
+                        <outlet property="photoDetailScrollView" destination="en6-kO-pux" id="GCK-Wt-M2A"/>
+                        <outlet property="photoDetailTitleLabel" destination="4gp-Aq-k8i" id="683-HT-IyP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VJ-19-RUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4569.5652173913049" y="120.53571428571428"/>
+        </scene>
+        <!--List Album Table-->
+        <scene sceneID="U1L-tg-wvP">
+            <objects>
+                <tableViewController id="taV-K9-iaP" userLabel="List Album Table" customClass="AlbumListViewController" customModule="PinchPhotoAlbum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FyL-GZ-lmI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listOfAlbumCell" rowHeight="80" id="dEL-TJ-boR">
+                                <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dEL-TJ-boR" id="4tc-lM-PCb">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.9585232138633728" green="0.91777706146240234" blue="0.83481341600418091" alpha="0.9996948242" colorSpace="custom" customColorSpace="sRGB"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="taV-K9-iaP" id="AFh-pE-xaQ"/>
+                            <outlet property="delegate" destination="taV-K9-iaP" id="7Ab-Er-b8Q"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pinch Photo Album" id="2NA-lY-dK4"/>
+                    <connections>
+                        <segue destination="OiH-9O-ktI" kind="show" identifier="goToPhotos" id="2T0-ac-WbJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qix-nZ-p9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836.2318840579715" y="134.59821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qpj-He-8QK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gtg-Ud-Imu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gD9-5c-E7i">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.6904948353767395" blue="0.0035186947789043188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                            <color key="textColor" red="0.1086790487" green="0.26220238210000002" blue="0.28235772250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="taV-K9-iaP" kind="relationship" relationship="rootViewController" id="Ms2-8q-66r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jf1-p9-PhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926.0869565217392" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+</document>
